@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Support Window</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <div id="chatButton" onclick="toggleChat()">
+    <span class="chatButtonIcon">Chat</span>
+  </div>
+
+  <div id="chatWindow" >
+    <div id="chatHeader">
+      <div id="title">
+        <img src="./assets/chaticon.png" alt="" srcset="" width="30" height="30">
+        <h2>Chat Support</h2>  
+      </div>
+      <button id="closeButton" onclick="toggleChat()"><img src="./assets/closeicon.png" alt="" width="20" height="20"></button>
+    </div>
+    <div id="chatContent">
+      <div class="message sent">
+          <p>This is a sent message.</p>
+      </div>
+      <div class="message received">
+          <p>This is a received message.</p>
+      </div>
+    </div>
+    <div id="messageInputContainer">
+      <input type="text" id="messageInput" placeholder="Type your message ">
+      <i class="material-icons" id="sendIcon">send</i>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
